@@ -1,0 +1,12 @@
+public String fizzString2(int n) {
+        boolean div3 = n % 3 == 0;
+        boolean div5 = n % 5 == 0;
+        if (div3 == false && div5 == false) {
+            return n + "!";
+        } else if (div3 == true && div5 == false) {
+            return "Fizz!";
+        } else if (div3 == false && div5 == true) {
+            return "Buzz!";
+        }
+        return "FizzBuzz!";
+    }

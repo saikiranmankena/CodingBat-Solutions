@@ -1,0 +1,10 @@
+public int[] makeEnds(int[] nums) {
+      if (nums.length > 1) {
+          int[] nums1 = {nums[0], nums[nums.length - 1]};
+          return nums1;
+      } else if (nums.length == 1) {
+          int[] nums1 = {nums[0], nums[0]};
+          return nums1;
+      }
+      return nums;
+  }

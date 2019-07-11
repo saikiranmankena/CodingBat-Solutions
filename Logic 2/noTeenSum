@@ -1,0 +1,18 @@
+public int noTeenSum(int a, int b, int c) {
+       int sum = 0;
+       if (a < 13 || a > 19) {
+           sum += a;
+       }
+       if (b < 13 || b > 19) {
+           sum += b;
+       }
+       if (c < 13 || c > 19) {
+           sum += c;
+       }
+       return sum + fixTeen(a) + fixTeen(b) + fixTeen(c);
+   }
+   public int fixTeen(int n) {
+       if (n == 15 || n == 16) {
+           return n;
+       } else return 0;
+   }
